@@ -298,3 +298,45 @@ body {
 .timeline-item::before {
     animation: pulse 2s infinite;
 }
+
+.timeline-title {
+    color: #333 !important;
+    margin-bottom: 10px;
+}
+
+.timeline-tech {
+    margin-top: 15px;
+}
+
+.timeline-tech .badge {
+    font-size: 0.75rem;
+    margin-right: 5px;
+}
+
+.pulse-animation img {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.animate-fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.animate-fade-in.animate-fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+

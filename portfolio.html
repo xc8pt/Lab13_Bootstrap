@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulin Rinat Rushanovich Portfolio - Frontend Developer</title>
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="custom.css" />
+</head>
+
+<body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-code-slash me-2"></i>Abdulin Rinat Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#timeline">История</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Проекты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Навыки</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero секция -->
+    <section id="home" class="min-vh-100 d-flex align-items-center text-white">
+        <div class="container text-center">
+            <div class="pulse-animation mb-4">
+                <img src="https://placehold.ru/150x150/667eea/ffffff?text=AA" alt="Фото"
+                    class="rounded-circle shadow-lg" style="width: 150px; height: 150px;">
+            </div>
+            <h1 class="display-3 fw-bold mb-4 animate-fade-in">Абдулин Ринат</h1>
+            <p class="lead fs-2 mb-5 animate-slide-up">Frontend разработчик из Волжского<br><strong>Люблю Linux, код и
+                    мощное железо</strong></p>
+            <a href="#timeline" class="btn btn-primary btn-lg px-5 py-3 fs-5 shadow-lg">
+                <i class="bi bi-clock-history me-2"></i>Моя история
+            </a>
+        </div>
+    </section>
+
+    <!-- Временная шкала  -->
+    <section id="timeline" class="container my-5 py-5">
+        <h2 class="text-center mb-5 animate-fade-in">
+            <i class="bi bi-clock-history text-primary me-2"></i>Моя история
+        </h2>
+        <div class="timeline">
+            <!-- 2025 - Поступление -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="badge bg-primary mb-3">
+                        <i class="bi bi-mortarboard-fill me-1"></i>2023
+                    </span>
+                    <h5 class="timeline-title">
+                        <i class="bi bi-university text-primary me-2"></i>Поступление в университет
+                    </h5>
+                    <p class="text-muted mb-2">Начало пути в IT — первая встреча с HTML, CSS и Linux</p>
+                    <div class="timeline-tech">
+                        <span class="badge bg-success">HTML/CSS</span>
+                        <span class="badge bg-info">Linux Mint</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2025 - Первый сайт -->
+            <div class="timeline-item timeline-item-left">
+                <div class="timeline-content">
+                    <span class="badge bg-success mb-3">
+                        <i class="bi bi-code-slash me-1"></i>2023
+                    </span>
+                    <h5 class="timeline-title">
+                        <i class="bi bi-file-code text-success me-2"></i>Первый веб-сайт
+                    </h5>
+                    <p class="text-muted mb-2">Создал лендинг на чистом HTML/CSS — первый восторг от верстки!</p>
+                    <div class="timeline-tech">
+                        <span class="badge bg-warning text-dark">Flexbox</span>
+                        <span class="badge bg-secondary">Responsive</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2026 - Linux Admin -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="badge bg-info mb-3">
+                        <i class="bi bi-linux me-1"></i>2024
+                    </span>
+                    <h5 class="timeline-title">
+                        <i class="bi bi-terminal text-info me-2"></i>Стал Linux администратором
+                    </h5>
+                    <p class="text-muted mb-2">Установка Mint, настройка серверов, работа с SSH и пакетами</p>
+                    <div class="timeline-tech">
+                        <span class="badge bg-danger">Bash</span>
+                        <span class="badge bg-dark text-white">SSH/Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2026 - YouTube Clone -->
+            <div class="timeline-item timeline-item-left">
+                <div class="timeline-content">
+                    <span class="badge bg-warning text-dark mb-3">
+                        <i class="bi bi-youtube me-1"></i>2024
+                    </span>
+                    <h5 class="timeline-title">
+                        <i class="bi bi-play-circle text-warning me-2"></i>YouTube Clone
+                    </h5>
+                    <p class="text-muted mb-2">Крутой клон главной страницы YouTube с фильтрами и анимациями</p>
+                    <div class="timeline-tech">
+                        <span class="badge bg-primary">CSS Grid</span>
+                        <span class="badge bg-light border">Hover эффекты</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2025 - Топ ПК -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="badge bg-danger mb-3">
+                        <i class="bi bi-cpu me-1"></i>2025
+                    </span>
+                    <h5 class="timeline-title">
+                        <i class="bi bi-pc-display-horizontal text-danger me-2"></i>Собрал топовый ПК
+                    </h5>
+                    <p class="text-muted mb-2">RTX 2080 Turbo, Intel i5 - 13400f, жидкостное охлаждение — мечта
+                        сисадмина!</p>
+                    <div class="timeline-tech">
+                        <span class="badge bg-success">Hardware</span>
+                        <span class="badge bg-info">Overclocking</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2026 - Сейчас -->
+            <div class="timeline-item timeline-item-left">
+                <div class="timeline-content">
+                    <span class="badge bg-success mb-3">
+                        <i class="bi bi-rocket-takeoff-fill me-1"></i>2026
+                    </span>
+                    <h5 class="timeline-title">
+                        <i class="bi bi-rocket-takeoff text-success me-2"></i>Frontend разработчик
+                    </h5>
+                    <p class="text-muted">Готов к новым проектам! 🚀 Bootstrap, React, Node.js...</p>
+                    <div class="timeline-tech">
+                        <span class="badge bg-primary">Bootstrap 5</span>
+                        <span class="badge bg-warning text-dark">Next.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <body>
+        <!-- Bootstrap Bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+        <!-- Навигация -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#home">📁 Abdulin Rinat Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Проекты</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Навыки</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero секция -->
+        <section id="home" class="min-vh-100 d-flex align-items-center text-white">
+            <div class="container text-center">
+                <img src="https://placehold.ru/150x150/667eea/ffffff?text=AA" alt="Фото"
+                    class="rounded-circle mb-4 shadow-lg" style="width: 150px; height: 150px;">
+                <h1 class="display-3 fw-bold mb-4">Абдулин Ринат</h1>
+                <p class="lead fs-2 mb-5">Frontend разработчик из Волжского<br>Специалист по Linux, HTML/CSS/JS,
+                    системному администрированию</p>
+                <a href="#projects" class="btn btn-primary btn-lg px-5 py-3 fs-5">Посмотреть проекты</a>
+            </div>
+        </section>
+
+        <!-- Обо мне -->
+        <section id="about" class="container my-5">
+            <h2 class="text-center mb-5">Обо мне</h2>
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <div class="p-5 bg-light rounded-4 shadow-lg">
+                        <h3>Frontend разработчик & Linux администратор</h3>
+                        <p class="lead">Проживаю в Волжском, Волгоградская область. Специализируюсь на создании
+                            современных веб-приложений и настройке Linux систем.</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><strong>Опыт:</strong> 3+ года веб-разработки и администрирования Linux
+                            </li>
+                            <li class="mb-3"><strong>Основной стек:</strong> HTML5, CSS3, JavaScript, Linux Mint, Git
+                            </li>
+                            <li class="mb-3"><strong>Инструменты:</strong> VS Code, Figma, qBittorrent, SSH, Docker</li>
+                            <li><strong>Контакты:</strong> Волжский, +7 (XXX) XXX-XX-XX, email@example.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100 shadow-lg">
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title">Технологии</h5>
+                            <div class="mb-4">
+                                <span class="badge bg-primary me-2 mb-2 d-inline-block">Linux Mint</span>
+                                <span class="badge bg-success me-2 mb-2 d-inline-block">HTML/CSS</span>
+                                <span class="badge bg-warning text-dark me-2 mb-2 d-inline-block">JavaScript</span>
+                                <span class="badge bg-info me-2 mb-2 d-inline-block">Bootstrap</span>
+                                <span class="badge bg-danger me-2 mb-2 d-inline-block">Git</span>
+                                <span class="badge bg-secondary me-2 mb-2 d-inline-block">Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Навыки -->
+        <section id="skills" class="container my-5">
+            <h2 class="text-center mb-5">Навыки</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Frontend</h5>
+                            <div class="mb-3">
+                                <label class="form-label">HTML/CSS</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar bg-success" style="width: 95%">95%</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">JavaScript</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar bg-info" style="width: 85%">85%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Linux Admin</h5>
+                            <div class="mb-3">
+                                <label class="form-label">Linux Mint</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar bg-warning" style="width: 90%">90%</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Сети/SSH</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar bg-primary" style="width: 88%">88%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Инструменты</h5>
+                            <div class="mb-3">
+                                <label class="form-label">Git/GitHub</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar bg-danger" style="width: 80%">80%</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Responsive</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar bg-secondary" style="width: 92%">92%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Проекты -->
+        <section id="projects" class="container-fluid bg-light py-5 my-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Мои проекты</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-lg">
+                            <img src="https://placehold.ru/400x250/667eea/ffffff?text=YouTube+Clone"
+                                class="card-img-top" alt="YouTube Clone">
+                            <div class="card-body">
+                                <h5 class="card-title">YouTube Clone</h5>
+                                <p class="card-text">Полноценный клон главной страницы YouTube с адаптивной версткой,
+                                    фильтрами и hover-эффектами</p>
+                                <span class="badge bg-primary mb-2">HTML/CSS</span> <span
+                                    class="badge bg-success mb-2">Grid/Flexbox</span>
+                                <a href="#" class="btn btn-outline-primary mt-3">Посмотреть код</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Повтори для 5-6 проектов -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-lg">
+                            <img src="https://placehold.ru/400x250/764ba2/ffffff?text=Portfolio+Bootstrap"
+                                class="card-img-top" alt="Portfolio">
+                            <div class="card-body">
+                                <h5 class="card-title">Bootstrap Portfolio</h5>
+                                <p class="card-text">Адаптивное портфолио с использованием всех компонентов Bootstrap 5
+                                </p>
+                                <span class="badge bg-info mb-2">Bootstrap 5</span> <span
+                                    class="badge bg-warning mb-2">JS</span>
+                                <a href="#" class="btn btn-outline-primary mt-3">Посмотреть код</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contact" class="container my-5">
+            <h2 class="text-center mb-5">Свяжитесь со мной</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="mb-4">
+                            <label for="name" class="form-label">Имя *</label>
+                            <input type="text" class="form-control" id="name" required>
+                            <div class="invalid-feedback">Введите ваше имя</div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Введите корректный email</div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Сообщение *</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                            <div class="invalid-feedback">Введите сообщение</div>
+                        </div>
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" class="form-check-input" id="agree" required>
+                            <label class="form-check-label" for="agree">Согласен с обработкой данных</label>
+                            <div class="invalid-feedback">Необходимо согласие</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Футер -->
+        <footer class="bg-dark text-white py-5 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Абдулин Ринат</h5>
+                        <p>Frontend разработчик<br>Волжский, Волгоградская область</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-2">© 2026 Все права защищены</p>
+                        <p>Сделано с ❤️ и Bootstrap 5</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</body>
+
+</html>
